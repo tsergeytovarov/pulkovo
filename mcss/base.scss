@@ -6,6 +6,7 @@
     float: left;
     @extend .inbox;
     padding: 0 14px;
+    min-height: 1px;
 }
 
 .row{
@@ -40,6 +41,11 @@
     
     &:after{
         @extend .clear;
+    }
+
+    .single{
+        margin: 0 auto;
+        float: none;
     }
 
 }
@@ -79,11 +85,30 @@
 }
 .clearfix:after{ @extend .clear; }
 
+/* colors */
+
+$blue: #325692;
+$blue-dark: #344563;
+$black: #000;
+$gray: #dbdbdb;
+$gray-dark: #959ba5;
+$red: #ed3f40;
+$yellow: #fd9f23;
+
+/* i ico*/
+
+i, .ico{
+    @extend .inbox;
+    @extend .inline;
+    font-size: 0;
+    text-indent: -9999px;
+}
+
 /* basic typography */
 
 
 body{
-    
+    font-family: 'PT Sans', sans-serif;
 }
 h1{
     
@@ -128,17 +153,23 @@ form{
         box-sizing: border-box;
         outline: none;
         border: 0;
-        
+        font-family: 'PT Sans', sans-serif;
+        background: #fff;
+        font-size: 15px;
+        line-height: 17px;
+        color: $black;
+        border-radius: 100px;
+        width: 100%;
+        padding: 10px 15px;
+
         &:focus{
 
         }
-    }
 
-
-    .search{
-        padding: 0 10px 0 30px!important;
-        background: #f6f6f6 url(img/sprite-1.png) no-repeat top left!important;
-        background-position: 8px -975px!important;
+        &.search{
+            padding-left: 45px;
+            background: #fff url(img/ico-find.png) no-repeat 15px center;
+        }
     }
 
     input::-webkit-input-placeholder{

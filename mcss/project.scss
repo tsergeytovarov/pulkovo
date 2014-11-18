@@ -1,3 +1,320 @@
 /* 
 	start the project modules like a pages 
 */
+
+
+.wrapper{
+	max-width: 1024px;
+	min-width: 320px;
+	min-height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+/* main-header */
+.main-header{
+	background: $blue;
+	border-bottom: 4px solid $gray-dark;
+}
+
+.menu-open{
+	@extend .inbox;
+	display: block;
+	width: 75px;
+	height: 75px;
+	background: $blue-dark url(img/ico-menu-open.png) no-repeat center;
+}
+
+/* content-wrapper */
+
+body, html{
+	height: 100%;
+}
+
+.hidden{
+	overflow: hidden;
+}
+
+.content-wrapper{
+	position: relative;
+	height: 100%;
+}
+
+/* main -menu */
+.main-menu{
+	width: 260px;
+	height: 100%;
+	
+	position: absolute;
+	top: -80px;
+	left: -260px;
+
+	@extend .inbox;
+	padding-top: 20px;
+
+	transition: left .3s ease;
+
+	background: $blue-dark;
+	
+	&.active{
+		left: 0;
+	}
+
+	img{
+		margin-left: 25px;
+	}
+}
+
+.navigation{
+	margin-top: 30px;
+
+	a{
+		display: block;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #fff;
+		@extend .inbox;
+		padding: 20px 0 20px 65px; 
+		border-bottom: 3px solid #2d3c55;
+		text-decoration: none;
+		font-weight: 600;
+
+		&:nth-child(1){
+			background: url(img/ico-menu-plane.png) no-repeat 22px center;
+		}
+
+		&:nth-child(2){
+			background: url(img/ico-menu-car.png) no-repeat 26px center;
+		}
+
+		&:nth-child(3){
+			background: url(img/ico-menu-shop.png) no-repeat 30px center;
+		}
+
+		&:nth-child(4){
+			background: url(img/ico-menu-company.png) no-repeat 22px center;
+		}
+
+		&:nth-child(5){
+			background: url(img/ico-menu-place.png) no-repeat 30px center;
+		}
+	}
+}
+
+.menu-close{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: url(img/ico-menu-close.png) no-repeat center;
+}
+
+/* main-page */
+
+.main-page{
+
+	.header{
+		background: $gray;
+		padding-top: 15px;
+	}
+}
+
+.tab-control{
+	
+	.col{
+		padding: 0;
+	}
+
+	a{
+		display: block;
+		width: 100%;
+		text-decoration: none;
+
+	}
+
+	&.main{
+		margin-top: 20px;
+		border-bottom: 1px solid #ccc;
+
+		a{
+			font-size: 18px;
+			color: $blue;
+			text-transform: uppercase;
+			text-align: center;
+			padding: 20px 0;
+			border-bottom: 4px solid transparent;
+			font-weight: 800;
+			line-height: 19px;
+
+			i{
+				margin-right: 15px;
+			}
+		}
+
+		.out{
+			i{
+				width: 54px;
+				height: 19px;
+				background: url(img/ico-plane-out.png) no-repeat center;
+			}
+
+			&.active{
+				i{
+					background: url(img/ico-plane-out-active.png) no-repeat center;
+				}
+			}
+		}
+
+		.come{
+			i{
+				width: 54px;
+				height: 19px;
+				background: url(img/ico-plane-come.png) no-repeat center;
+			}
+
+			&.active{
+				i{
+					background: url(img/ico-plane-come-active.png) no-repeat center;
+				}
+			}
+		}
+
+		.active{
+			color: $black;
+			border-bottom: 4px solid $black;
+		}
+	}
+}
+/* status */
+
+.status{
+	padding-left: 40px;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 30px;
+
+	&.out-stop{
+		color: $red;
+	}
+
+	&.out-cancel{
+		color: $red;
+	}
+
+	&.out-process{
+		color: $yellow;
+	}
+
+	&.out-complete{
+		color: $blue;
+	}
+
+
+	&.come-ok{
+		color: $red;
+	}
+
+	&.come-timeout{
+		color: $red;
+	}
+
+	&.come-process{
+		color: $red;
+	}
+
+	&.come-come{
+		color: $red;
+	}
+
+
+}
+
+/* fligt-item */
+.fligt-item{
+
+	table{
+		border-bottom: 1px solid #ccc;
+		width: 100%;
+		tr{
+			border-bottom: 1px solid #eff0f0;
+			
+			td{
+				padding: 10px 0 10px 18px;
+
+				&:first-child{
+					width: 90px;
+				}
+			}
+		}
+
+		tbody{
+
+
+			tr{
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+
+			td{
+				font-size: 18px;
+				line-height: 20px;
+
+				span{
+					font-size: 16px;
+					color: #929292;
+				}
+			}
+		}
+
+		.plane{
+			padding-left: 70px;
+			background: url(img/ico-plane-pass.png) no-repeat left center;
+		}
+
+		thead{
+
+			tr{
+				td{
+					font-weight: 800;
+
+					&:first-child{
+						font-size: 25px;
+					}
+
+					&:last-child{
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* tab-content */
+.tab-content{
+
+	.tab{
+		display: none;
+
+		&.active{
+			display: block;
+		}
+	}
+}
+
+.tab{
+	.fligt-item:nth-child(even){
+		background: #f2f2f2;
+
+		table{
+			tr{
+				border-bottom: 1px solid #fff;
+			}
+		}
+	}
+
+
+}

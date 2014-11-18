@@ -315,6 +315,121 @@ body, html{
 			}
 		}
 	}
+}
 
+/* promo slider */
 
+.slide{
+	background: #fff;
+	margin-top: 15px;
+
+	&>img{
+		width: 130px;
+		float: left;
+	}
+
+	.content{
+		padding-left: 150px;
+		padding-bottom: 20px;
+
+		a{
+			font-size: 18px;
+			line-height: 22px;
+			color: $blue;
+			display: block;
+			margin: 15px 0 10px;
+			font-weight: 800;
+			text-decoration: none;
+		}
+
+		p{
+			font-size: 15px;
+			color: #000;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.bx-wrapper{
+	padding-bottom: 40px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #dbdbdb;
+}
+
+.bx-wrapper .bx-pager{
+	bottom: 15px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+	width: 11px;
+	height: 11px;
+	background: #fd9f23;
+	margin: 0 10px;
+}
+
+.bx-wrapper .bx-viewport{
+	height: auto!important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+	background: #000;
+}
+
+hr{
+	background: #eeeeee;
+	border: 0;
+	border-bottom: 1px solid #ccc;
+	height: 80px;
+	margin: 0;
+}
+
+/* form-shedule */
+
+.form-shedule{
+	background: #dbdbdb;
+	@extend .inbox;
+	padding: 30px 25px;
+
+	h2{
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 800;
+		color: $blue;
+		margin-bottom: 15px;
+	}
+
+	p{
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+
+	input{
+		margin-bottom: 20px;
+	}
+}
+
+/* footer */
+
+footer{
+	border-top: 1px solid #ccc;
+	padding: 25px 20px 40px;
+	background: #eee;
+	text-align: center;
+
+	p{
+		text-align: center;
+		font-size: 13px;
+		line-height: 17px;
+		margin-bottom: 35px;
+	}
+
+	.to-main{
+		@extend .inline;
+		width: 196px;
+		height: 17px;
+		background: url(img/ico-to-main.png) no-repeat center;
+		text-decoration: none;
+	}
 }

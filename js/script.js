@@ -21,4 +21,12 @@ $(function(){
 
 	})
 
+
+	// promo slider
+
+	$('.promo-slider').bxSlider({
+		pager: true,
+		auto: true
+	});
+
 });

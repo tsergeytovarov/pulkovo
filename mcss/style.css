@@ -1,92 +1,21 @@
 /* 
 	compile file
 */
-
 /* start the foundation style */
-
 /* RESET */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -96,18 +25,8 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -115,20 +34,16 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none;
 }
@@ -139,9 +54,7 @@ table {
 }
 
 /* start the base fraimwork styles. Can include base construction - forms/buttins/navigation and other */
-
 /* modul section */
-
 .col {
   float: left;
   padding: 0 14px;
@@ -151,27 +64,21 @@ table {
 .row.inline-row {
   font-size: 0;
 }
-
 .row.inline-row > .col {
   float: none;
 }
-
 .row.inline-row > .col:first-child {
   padding: 0 13px;
 }
-
 .row.inline-row > .col:last-child {
   padding: 0 13px;
 }
-
 .row .col:first-child {
   padding-left: 0px;
 }
-
 .row .col:last-child {
   padding-right: 0px;
 }
-
 .row .single {
   margin: 0 auto;
   float: none;
@@ -226,16 +133,7 @@ table {
 }
 
 /* main fraimwork start here */
-
-.inbox,
-.col,
-i,
-.ico,
-.menu-open,
-.main-menu,
-.navigation a {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+.inbox, .col, i, .ico, .menu-open, .main-menu, .navigation a, .form-shedule {
   box-sizing: border-box;
 }
 
@@ -247,19 +145,14 @@ i,
   float: right;
 }
 
-.inline,
-.row.inline-row > .col,
-i,
-.ico {
+.inline, .row.inline-row > .col, i, .ico, footer .to-main {
   display: inline-block;
   *display: inline;
   vertical-align: top;
   zoom: 1;
 }
 
-.clear,
-.row:after,
-.clearfix:after {
+.clear, .row:after, .clearfix:after {
   content: " ";
   display: block;
   height: 0;
@@ -269,27 +162,19 @@ i,
 }
 
 /* colors */
-
 /* i ico*/
-
-i,
-.ico {
+i, .ico {
   font-size: 0;
   text-indent: -9999px;
 }
 
 /* basic typography */
-
 body {
   font-family: 'PT Sans', sans-serif;
 }
 
 /* form style input and other */
-
-form input[type='text'],
-form textarea {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+form input[type='text'], form textarea {
   box-sizing: border-box;
   outline: none;
   border: 0;
@@ -297,22 +182,22 @@ form textarea {
   background: #fff;
   font-size: 15px;
   line-height: 17px;
-  color: black;
+  color: #000;
   border-radius: 100px;
   width: 100%;
   padding: 10px 15px;
 }
-
-form input[type='text'].search,
-form textarea.search {
+form input[type='text'].search, form textarea.search {
   padding-left: 45px;
-  background: white url(img/ico-find.png) no-repeat 15px center;
+  background: #fff url(img/ico-find.png) no-repeat 15px center;
 }
-
+form input[type='text'].date, form textarea.date {
+  padding-left: 45px;
+  background: #fff url(img/ico-calendar.png) no-repeat 15px center;
+}
 form label {
   cursor: pointer;
 }
-
 form button {
   cursor: pointer;
   outline: none;
@@ -320,13 +205,22 @@ form button {
 }
 
 /* btn styles */
-
 .btn {
   display: inline-block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 800;
+  line-height: 22px;
+  width: 100%;
+  text-align: center;
+  padding: 12px 15px;
+  border-radius: 100px;
+  background: #fd9f23;
+  box-shadow: inset 0 -2px 0 0 #db7e02;
+  border: none;
+  outline: none;
 }
 
 /**
@@ -340,10 +234,8 @@ form button {
  * CEO and founder of bxCreative, LTD
  * http://bxcreative.com
  */
-
 /** RESET AND LAYOUT
 ===================================*/
-
 .bx-wrapper {
   position: relative;
   padding: 0;
@@ -357,7 +249,6 @@ form button {
 
 /** THEME
 ===================================*/
-
 .bx-wrapper .bx-viewport {
   /*fix other elements on the page moving (on Chrome)*/
   -webkit-transform: translatez(0);
@@ -372,21 +263,7 @@ form button {
   width: 100%;
 }
 
-/* LOADER */
-
-.bx-wrapper .bx-loading {
-  min-height: 50px;
-  background: url(images/bx_loader.gif) center center no-repeat white;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-}
-
 /* PAGER */
-
 .bx-wrapper .bx-pager {
   text-align: center;
   font-size: .85em;
@@ -419,49 +296,9 @@ form button {
   background: #4f8cad;
 }
 
-/* DIRECTION CONTROLS (NEXT / PREV) */
-
-.bx-wrapper .bx-prev {
-  left: -50px;
-  background: url(img/sprite-1.png) no-repeat top left;
-  background-position: 0 -1721px;
-}
-
-.bx-wrapper .bx-next {
-  right: -50px;
-  background: url(img/sprite-1.png) no-repeat top left;
-  background-position: -36px -1620px;
-}
-
-.bx-wrapper .bx-prev:hover {
-  background-position: -38px -1721px;
-}
-
-.bx-wrapper .bx-next:hover {
-  background-position: 0 -1620px;
-}
-
-.bx-wrapper .bx-controls-direction a {
-  position: absolute;
-  top: 50%;
-  margin-top: -25px;
-  outline: 0;
-  width: 27px;
-  height: 51px;
-  text-indent: -9999px;
-  z-index: 9999;
-  -webkit-transition: background .3s ease;
-  transition: background .3s ease;
-}
-
-.bx-wrapper .bx-controls-direction a.disabled {
-  display: none;
-}
-
 /* 
 	start the project modules like a pages 
 */
-
 .wrapper {
   max-width: 1024px;
   min-width: 320px;
@@ -471,7 +308,6 @@ form button {
 }
 
 /* main-header */
-
 .main-header {
   background: #325692;
   border-bottom: 4px solid #959ba5;
@@ -485,9 +321,7 @@ form button {
 }
 
 /* content-wrapper */
-
-body,
-html {
+body, html {
   height: 100%;
 }
 
@@ -501,7 +335,6 @@ html {
 }
 
 /* main -menu */
-
 .main-menu {
   width: 260px;
   height: 100%;
@@ -510,14 +343,12 @@ html {
   left: -260px;
   padding-top: 20px;
   -webkit-transition: left .3s ease;
-  transition: left .3s ease;
+          transition: left .3s ease;
   background: #344563;
 }
-
 .main-menu.active {
   left: 0;
 }
-
 .main-menu img {
   margin-left: 25px;
 }
@@ -525,7 +356,6 @@ html {
 .navigation {
   margin-top: 30px;
 }
-
 .navigation a {
   display: block;
   font-size: 14px;
@@ -536,23 +366,18 @@ html {
   text-decoration: none;
   font-weight: 600;
 }
-
 .navigation a:nth-child(1) {
   background: url(img/ico-menu-plane.png) no-repeat 22px center;
 }
-
 .navigation a:nth-child(2) {
   background: url(img/ico-menu-car.png) no-repeat 26px center;
 }
-
 .navigation a:nth-child(3) {
   background: url(img/ico-menu-shop.png) no-repeat 30px center;
 }
-
 .navigation a:nth-child(4) {
   background: url(img/ico-menu-company.png) no-repeat 22px center;
 }
-
 .navigation a:nth-child(5) {
   background: url(img/ico-menu-place.png) no-repeat 30px center;
 }
@@ -567,7 +392,6 @@ html {
 }
 
 /* main-page */
-
 .main-page .header {
   background: #dbdbdb;
   padding-top: 15px;
@@ -576,18 +400,15 @@ html {
 .tab-control .col {
   padding: 0;
 }
-
 .tab-control a {
   display: block;
   width: 100%;
   text-decoration: none;
 }
-
 .tab-control.main {
   margin-top: 20px;
   border-bottom: 1px solid #ccc;
 }
-
 .tab-control.main a {
   font-size: 18px;
   color: #325692;
@@ -598,133 +419,105 @@ html {
   font-weight: 800;
   line-height: 19px;
 }
-
 .tab-control.main a i {
   margin-right: 15px;
 }
-
 .tab-control.main .out i {
   width: 54px;
   height: 19px;
   background: url(img/ico-plane-out.png) no-repeat center;
 }
-
 .tab-control.main .out.active i {
   background: url(img/ico-plane-out-active.png) no-repeat center;
 }
-
 .tab-control.main .come i {
   width: 54px;
   height: 19px;
   background: url(img/ico-plane-come.png) no-repeat center;
 }
-
 .tab-control.main .come.active i {
   background: url(img/ico-plane-come-active.png) no-repeat center;
 }
-
 .tab-control.main .active {
-  color: black;
-  border-bottom: 4px solid black;
+  color: #000;
+  border-bottom: 4px solid #000;
 }
 
 /* status */
-
 .status {
   padding-left: 40px;
   font-weight: 800;
   font-size: 18px;
   line-height: 30px;
 }
-
 .status.out-stop {
   color: #ed3f40;
 }
-
 .status.out-cancel {
   color: #ed3f40;
 }
-
 .status.out-process {
   color: #fd9f23;
 }
-
 .status.out-complete {
   color: #325692;
 }
-
 .status.come-ok {
   color: #ed3f40;
 }
-
 .status.come-timeout {
   color: #ed3f40;
 }
-
 .status.come-process {
   color: #ed3f40;
 }
-
 .status.come-come {
   color: #ed3f40;
 }
 
 /* fligt-item */
-
 .fligt-item table {
   border-bottom: 1px solid #ccc;
   width: 100%;
 }
-
 .fligt-item table tr {
   border-bottom: 1px solid #eff0f0;
 }
-
 .fligt-item table tr td {
   padding: 10px 0 10px 18px;
 }
-
 .fligt-item table tr td:first-child {
   width: 90px;
 }
-
 .fligt-item table tbody tr:last-child {
   border-bottom: none;
 }
-
 .fligt-item table tbody td {
   font-size: 18px;
   line-height: 20px;
 }
-
 .fligt-item table tbody td span {
   font-size: 16px;
   color: #929292;
 }
-
 .fligt-item table .plane {
   padding-left: 70px;
   background: url(img/ico-plane-pass.png) no-repeat left center;
 }
-
 .fligt-item table thead tr td {
   font-weight: 800;
 }
-
 .fligt-item table thead tr td:first-child {
   font-size: 25px;
 }
-
 .fligt-item table thead tr td:last-child {
   font-size: 22px;
 }
 
 /* tab-content */
-
 .tab-content .tab {
   display: none;
 }
-
 .tab-content .tab.active {
   display: block;
 }
@@ -732,15 +525,115 @@ html {
 .tab .fligt-item:nth-child(even) {
   background: #f2f2f2;
 }
-
 .tab .fligt-item:nth-child(even) table tr {
   border-bottom: 1px solid #fff;
 }
 
+/* promo slider */
+.slide {
+  background: #fff;
+  margin-top: 15px;
+}
+.slide > img {
+  width: 130px;
+  float: left;
+}
+.slide .content {
+  padding-left: 150px;
+  padding-bottom: 20px;
+}
+.slide .content a {
+  font-size: 18px;
+  line-height: 22px;
+  color: #325692;
+  display: block;
+  margin: 15px 0 10px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.slide .content p {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.bx-wrapper {
+  padding-bottom: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: #dbdbdb;
+}
+
+.bx-wrapper .bx-pager {
+  bottom: 15px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  width: 11px;
+  height: 11px;
+  background: #fd9f23;
+  margin: 0 10px;
+}
+
+.bx-wrapper .bx-viewport {
+  height: auto !important;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #000;
+}
+
+hr {
+  background: #eeeeee;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  height: 80px;
+  margin: 0;
+}
+
+/* form-shedule */
+.form-shedule {
+  background: #dbdbdb;
+  padding: 30px 25px;
+}
+.form-shedule h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 800;
+  color: #325692;
+  margin-bottom: 15px;
+}
+.form-shedule p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.form-shedule input {
+  margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid #ccc;
+  padding: 25px 20px 40px;
+  background: #eee;
+  text-align: center;
+}
+footer p {
+  text-align: center;
+  font-size: 13px;
+  line-height: 17px;
+  margin-bottom: 35px;
+}
+footer .to-main {
+  width: 196px;
+  height: 17px;
+  background: url(img/ico-to-main.png) no-repeat center;
+  text-decoration: none;
+}
+
 /* start the cosmetics project styles - this style not crashed layout */
-
 /* transitions */
-
 /* 
 	start context styles 
 	media and other

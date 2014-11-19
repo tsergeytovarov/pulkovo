@@ -899,3 +899,15 @@ footer .to-main {
     display: block;
   }
 }
+@media (max-width: 768px) {
+  .navigation ul li.active {
+    background: none;
+  }
+
+  .company {
+    padding: 20px 10px;
+  }
+  .company img {
+    max-width: 100%;
+  }
+}

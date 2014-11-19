@@ -137,7 +137,7 @@ table {
 }
 
 /* main fraimwork start here */
-.inbox, .col, i, .ico, .menu-open, .main-menu, .lang-toggle, .navigation a, .form-shedule {
+.inbox, .col, i, .ico, .menu-open, .main-menu, .lang-toggle, .navigation a, .form-shedule, .company-page .header {
   box-sizing: border-box;
 }
 
@@ -178,7 +178,7 @@ body {
 }
 
 /* form style input and other */
-form input[type='text'], form textarea {
+form input[type='text'], form textarea, form select {
   box-sizing: border-box;
   outline: none;
   border: 0;
@@ -191,11 +191,11 @@ form input[type='text'], form textarea {
   width: 100%;
   padding: 10px 15px;
 }
-form input[type='text'].search, form textarea.search {
+form input[type='text'].search, form textarea.search, form select.search {
   padding-left: 45px;
   background: #fff url(img/ico-find.png) no-repeat 15px center;
 }
-form input[type='text'].date, form textarea.date {
+form input[type='text'].date, form textarea.date, form select.date {
   padding-left: 45px;
   background: #fff url(img/ico-calendar.png) no-repeat 15px center;
 }
@@ -651,6 +651,26 @@ footer .to-main {
   height: 17px;
   background: url(img/ico-to-main.png) no-repeat center;
   text-decoration: none;
+}
+
+/* company-page */
+.company-page .header {
+  padding: 20px;
+  background: #dbdbdb;
+}
+.company-page select {
+  margin-bottom: 20px;
+}
+
+.company {
+  padding: 35px 40px;
+  border-bottom: 1px solid #ccc;
+}
+.company a {
+  font-size: 18px;
+  color: #325692;
+  text-decoration: none;
+  line-height: 43px;
 }
 
 /* start the cosmetics project styles - this style not crashed layout */

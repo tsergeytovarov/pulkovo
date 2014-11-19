@@ -452,3 +452,31 @@ footer{
 		text-decoration: none;
 	}
 }
+
+/* company-page */
+
+.company-page{
+
+	.header{
+		@extend .inbox;
+		padding: 20px;
+		background: #dbdbdb;
+	}
+
+	select{
+		margin-bottom: 20px;
+	}
+}
+
+
+.company{
+	padding: 35px 40px;
+	border-bottom: 1px solid #ccc;
+
+	a{
+		font-size: 18px;
+		color: $blue;
+		text-decoration: none;
+		line-height: 43px;
+	}
+}

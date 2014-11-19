@@ -153,7 +153,7 @@ ul{
 /* form style input and other */
 
 form{
-    input[type='text'], textarea{
+    input[type='text'], textarea, select{
         box-sizing: border-box;
         outline: none;
         border: 0;

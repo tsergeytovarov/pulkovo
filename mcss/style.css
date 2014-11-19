@@ -140,7 +140,7 @@ table {
 }
 
 /* main fraimwork start here */
-.inbox, .col, i, .ico, .menu-open, .main-menu, .lang-toggle, .navigation a, .form-shedule, .company-page .header, .text-page .header, .text-container .content, .shop-page .header, .food-item {
+.inbox, .col, i, .ico, .menu-open, .main-menu, .lang-toggle-small, .navigation a, .form-shedule, .company-page .header, .text-page .header, .text-container .content, .shop-page .header, .food-item {
   box-sizing: border-box;
 }
 
@@ -152,7 +152,7 @@ table {
   float: right;
 }
 
-.inline, .row.inline-row > .col, i, .ico, .lang-toggle, footer .to-main, .lang-toogle p, .lang-toogle .toggled {
+.inline, .row.inline-row > .col, i, .ico, .lang-toggle-small, footer .to-main, .lang-toogle p, .lang-toogle .toggled {
   display: inline-block;
   *display: inline;
   vertical-align: top;
@@ -400,7 +400,8 @@ body, html {
   margin-top: 25px;
 }
 
-.lang-toggle {
+.lang-toggle-small {
+  display: block;
   font-size: 18px;
   line-height: 22px;
   padding: 8px 30px 8px 15px;
@@ -817,7 +818,7 @@ footer .to-main {
 
 /* lang-toogle */
 .lang-toogle {
-  display: block;
+  display: none;
   text-decoration: none;
   margin: 15px 25px 0 0;
 }
@@ -888,5 +889,13 @@ footer .to-main {
 
   .navigation {
     margin-top: 0;
+  }
+
+  .lang-toggle-small {
+    display: none;
+  }
+
+  .lang-toogle {
+    display: block;
   }
 }

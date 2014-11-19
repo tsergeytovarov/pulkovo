@@ -79,7 +79,8 @@ body, html{
 		margin-top: 25px;
 	}
 }
-.lang-toggle{
+.lang-toggle-small{
+	display: block;
 	@extend .inline;
 	font-size: 18px;
 	line-height: 22px;
@@ -649,7 +650,7 @@ footer{
 
 /* lang-toogle */
 .lang-toogle{
-	display: block;
+	display: none;
 	text-decoration: none;
 	margin: 15px 25px 0 0;
 

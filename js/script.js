@@ -26,7 +26,8 @@ $(function(){
 
 	$('.promo-slider').bxSlider({
 		pager: true,
-		auto: true
+		auto: true,
+		controls: false
 	});
 
 	// search

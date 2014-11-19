@@ -140,7 +140,7 @@ table {
 }
 
 /* main fraimwork start here */
-.inbox, .col, i, .ico, .menu-open, .main-menu, .lang-toggle, .navigation a, .form-shedule, .company-page .header, .text-page .header, .text-container .content {
+.inbox, .col, i, .ico, .menu-open, .main-menu, .lang-toggle, .navigation a, .form-shedule, .company-page .header, .text-page .header, .text-container .content, .shop-page .header, .food-item {
   box-sizing: border-box;
 }
 
@@ -243,6 +243,17 @@ form button {
   width: 22px;
   height: 19px;
   margin-right: 10px;
+}
+.btn.blue {
+  background: #fff;
+  border: 2px solid #325692;
+  color: #325692;
+  box-shadow: none;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 120px;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 
 /**
@@ -762,6 +773,46 @@ footer .to-main {
 }
 .find-combo.active .button-find {
   display: inline-block !important;
+}
+
+.shop-page .header {
+  padding: 20px 20px 0;
+  background: #dbdbdb;
+}
+
+.food-item {
+  padding: 25px 30px;
+  border-bottom: 1px solid #ccc;
+}
+.food-item .image {
+  width: 100px;
+  float: left;
+  margin-right: 30px;
+}
+.food-item .content {
+  padding-left: 130px;
+}
+.food-item .content h2 {
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+.food-item .content p {
+  font-size: 16px;
+  line-height: 20px;
+}
+.food-item .content p b {
+  font-weight: 800;
+}
+.food-item .content p span {
+  color: #929292;
+  font-style: italic;
+}
+.food-item .content .time {
+  padding-left: 30px;
+  line-height: 22px;
+  background: url(img/ico-time.png) no-repeat center left;
+  margin: 10px 0;
 }
 
 /* start the cosmetics project styles - this style not crashed layout */

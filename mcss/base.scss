@@ -239,6 +239,18 @@ form{
         }
     }
 
+    &.blue{
+        background: #fff;
+        border: 2px solid $blue;
+        color: $blue;
+        box-shadow: none;
+        font-size: 16px;
+        margin-top: 20px;
+        width: 120px;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+
     &:hover{
         
     }

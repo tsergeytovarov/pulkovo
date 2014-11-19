@@ -595,3 +595,54 @@ footer{
 		}
 	}
 }
+
+.shop-page{
+	.header{
+		@extend .inbox;
+		padding: 20px 20px 0;
+		background: #dbdbdb;
+	}
+}
+
+.food-item{
+	@extend .inbox;
+	padding: 25px 30px;
+	border-bottom: 1px solid #ccc;
+
+	.image{
+		width: 100px;
+		float: left;
+		margin-right: 30px;
+	}
+
+	.content{
+		padding-left: 130px;
+
+		h2{
+			font-size: 28px;
+			line-height: 32px;
+			margin-bottom: 15px;
+		}
+
+		p{
+			font-size: 16px;
+			line-height: 20px;
+
+			b{
+				font-weight: 800;
+			}
+
+			span{
+				color: #929292;
+				font-style: italic;
+			}
+		}
+
+		.time{
+			padding-left: 30px;
+			line-height: 22px;
+			background: url(img/ico-time.png) no-repeat center left;
+			margin: 10px 0;
+		}	
+	}
+}

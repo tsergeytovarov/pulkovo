@@ -3,7 +3,39 @@
 	media and other
 */
 
-@media (max-width: 1400px) {
+@media (min-width: 768px) {
 	
-	
+	.main-menu{
+		position: relative;
+		top: 0;
+		left: 0;
+		float: left;
+		min-height: 100vh;
+		border-top: 3px solid #2d3c55;
+		padding-top: 0;
+	}
+
+	.content-page{
+		padding-left: 260px;
+	}
+
+	.menu-close,
+	.menu-tt,
+	.main-menu img{
+		display: none;
+	}
+
+	.main-header{
+		padding-bottom: 10px;
+	}
+
+	.telephone{
+		display: block;
+	}
+
+	.navigation {
+		margin-top: 0;
+	}
+
+
 }

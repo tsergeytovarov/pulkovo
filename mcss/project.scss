@@ -33,7 +33,7 @@ body, html{
 }
 
 .hidden{
-	overflow: hidden;
+	overflow-y: hidden;
 }
 
 .content-wrapper{
@@ -70,6 +70,15 @@ body, html{
 	margin-top: 15px;
 }
 
+.telephone{
+	display: none;
+	p{
+		font-size: 16px;
+		line-height: 20px;
+		color: #dbdbdb;
+		margin-top: 25px;
+	}
+}
 .lang-toggle{
 	@extend .inline;
 	font-size: 18px;
@@ -88,6 +97,52 @@ body, html{
 .navigation{
 	margin-top: 30px;
 
+	ul{
+		li{
+			border-bottom: 3px solid #2d3c55;
+			
+			&:nth-child(1){
+				a{
+					background: url(img/ico-menu-plane.png) no-repeat 22px center;
+				}
+			}
+
+			&:nth-child(2){
+				a{
+					background: url(img/ico-menu-car.png) no-repeat 26px center;
+				}
+			}
+
+			&:nth-child(3){
+				a{
+					background: url(img/ico-menu-shop.png) no-repeat 30px center;
+				}
+			}
+
+			&:nth-child(4){
+				a{
+					background: url(img/ico-menu-company.png) no-repeat 22px center;
+				}
+			}
+
+			&:nth-child(5){
+				a{
+					background: url(img/ico-menu-place.png) no-repeat 30px center;
+				}
+			}
+
+			&.active{
+				background: url(img/ico-arrow-right.png) no-repeat right center;
+				
+				a{
+					border-left: 4px solid $yellow;
+					color: $yellow;
+				}
+			}
+		}
+
+	}
+
 	a{
 		display: block;
 		font-size: 14px;
@@ -95,29 +150,13 @@ body, html{
 		color: #fff;
 		@extend .inbox;
 		padding: 20px 0 20px 65px; 
-		border-bottom: 3px solid #2d3c55;
+		
 		text-decoration: none;
 		font-weight: 600;
+		border-left: 4px solid transparent;
 
-		&:nth-child(1){
-			background: url(img/ico-menu-plane.png) no-repeat 22px center;
-		}
+		
 
-		&:nth-child(2){
-			background: url(img/ico-menu-car.png) no-repeat 26px center;
-		}
-
-		&:nth-child(3){
-			background: url(img/ico-menu-shop.png) no-repeat 30px center;
-		}
-
-		&:nth-child(4){
-			background: url(img/ico-menu-company.png) no-repeat 22px center;
-		}
-
-		&:nth-child(5){
-			background: url(img/ico-menu-place.png) no-repeat 30px center;
-		}
 	}
 }
 

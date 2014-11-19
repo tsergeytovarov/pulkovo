@@ -26,6 +26,10 @@
                 padding: 0 13px;
             }
         }
+
+        &:after{
+            display: none;
+        }
     }
 
     .col{

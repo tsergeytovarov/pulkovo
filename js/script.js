@@ -4,7 +4,7 @@ $(function(){
 
 	$('.menu-open, .menu-close').on('click', function(){
 		$('.main-menu').toggleClass('active');
-		$('body').toggleClass('hidden')
+		$('body,html').toggleClass('hidden')
 	})
 
 

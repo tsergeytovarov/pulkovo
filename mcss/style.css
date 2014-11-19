@@ -73,6 +73,9 @@ table {
 .row.inline-row > .col:last-child {
   padding: 0 13px;
 }
+.row.inline-row:after {
+  display: none;
+}
 .row .col:first-child {
   padding-left: 0px;
 }
@@ -330,7 +333,7 @@ body, html {
 }
 
 .hidden {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .content-wrapper {
@@ -361,6 +364,16 @@ body, html {
   margin-top: 15px;
 }
 
+.telephone {
+  display: none;
+}
+.telephone p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #dbdbdb;
+  margin-top: 25px;
+}
+
 .lang-toggle {
   font-size: 18px;
   line-height: 22px;
@@ -377,30 +390,40 @@ body, html {
 .navigation {
   margin-top: 30px;
 }
+.navigation ul li {
+  border-bottom: 3px solid #2d3c55;
+}
+.navigation ul li:nth-child(1) a {
+  background: url(img/ico-menu-plane.png) no-repeat 22px center;
+}
+.navigation ul li:nth-child(2) a {
+  background: url(img/ico-menu-car.png) no-repeat 26px center;
+}
+.navigation ul li:nth-child(3) a {
+  background: url(img/ico-menu-shop.png) no-repeat 30px center;
+}
+.navigation ul li:nth-child(4) a {
+  background: url(img/ico-menu-company.png) no-repeat 22px center;
+}
+.navigation ul li:nth-child(5) a {
+  background: url(img/ico-menu-place.png) no-repeat 30px center;
+}
+.navigation ul li.active {
+  background: url(img/ico-arrow-right.png) no-repeat right center;
+}
+.navigation ul li.active a {
+  border-left: 4px solid #fd9f23;
+  color: #fd9f23;
+}
 .navigation a {
   display: block;
   font-size: 14px;
   text-transform: uppercase;
   color: #fff;
   padding: 20px 0 20px 65px;
-  border-bottom: 3px solid #2d3c55;
   text-decoration: none;
   font-weight: 600;
-}
-.navigation a:nth-child(1) {
-  background: url(img/ico-menu-plane.png) no-repeat 22px center;
-}
-.navigation a:nth-child(2) {
-  background: url(img/ico-menu-car.png) no-repeat 26px center;
-}
-.navigation a:nth-child(3) {
-  background: url(img/ico-menu-shop.png) no-repeat 30px center;
-}
-.navigation a:nth-child(4) {
-  background: url(img/ico-menu-company.png) no-repeat 22px center;
-}
-.navigation a:nth-child(5) {
-  background: url(img/ico-menu-place.png) no-repeat 30px center;
+  border-left: 4px solid transparent;
 }
 
 .menu-close {
@@ -725,3 +748,36 @@ footer .to-main {
 	start context styles 
 	media and other
 */
+@media (min-width: 768px) {
+  .main-menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    min-height: 100vh;
+    border-top: 3px solid #2d3c55;
+    padding-top: 0;
+  }
+
+  .content-page {
+    padding-left: 260px;
+  }
+
+  .menu-close,
+  .menu-tt,
+  .main-menu img {
+    display: none;
+  }
+
+  .main-header {
+    padding-bottom: 10px;
+  }
+
+  .telephone {
+    display: block;
+  }
+
+  .navigation {
+    margin-top: 0;
+  }
+}

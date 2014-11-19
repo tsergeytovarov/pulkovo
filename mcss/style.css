@@ -137,7 +137,7 @@ table {
 }
 
 /* main fraimwork start here */
-.inbox, .col, i, .ico, .menu-open, .main-menu, .lang-toggle, .navigation a, .form-shedule, .company-page .header {
+.inbox, .col, i, .ico, .menu-open, .main-menu, .lang-toggle, .navigation a, .form-shedule, .company-page .header, .text-page .header, .text-container .content {
   box-sizing: border-box;
 }
 
@@ -671,6 +671,52 @@ footer .to-main {
   color: #325692;
   text-decoration: none;
   line-height: 43px;
+}
+
+.text-page .header {
+  padding: 20px;
+  background: #dbdbdb;
+}
+.text-page .header a {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #325692;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+.text-page .header a:last-child {
+  margin-bottom: 0;
+}
+.text-page .header a.active {
+  color: #000;
+}
+
+.text-container .content {
+  padding: 20px;
+}
+.text-container p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+  margin-bottom: 30px;
+}
+.text-container h2 {
+  font-weight: 800;
+  font-size: 20px;
+  color: #000;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+.text-container h2.red {
+  color: #ed3f40;
+}
+.text-container img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* start the cosmetics project styles - this style not crashed layout */

@@ -84,6 +84,10 @@ table {
   float: none;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .s-1 {
   width: 8.33%;
 }
@@ -133,7 +137,7 @@ table {
 }
 
 /* main fraimwork start here */
-.inbox, .col, i, .ico, .menu-open, .main-menu, .navigation a, .form-shedule {
+.inbox, .col, i, .ico, .menu-open, .main-menu, .lang-toggle, .navigation a, .form-shedule {
   box-sizing: border-box;
 }
 
@@ -145,7 +149,7 @@ table {
   float: right;
 }
 
-.inline, .row.inline-row > .col, i, .ico, footer .to-main {
+.inline, .row.inline-row > .col, i, .ico, .lang-toggle, footer .to-main {
   display: inline-block;
   *display: inline;
   vertical-align: top;
@@ -351,6 +355,23 @@ body, html {
 }
 .main-menu img {
   margin-left: 25px;
+}
+
+.logo {
+  margin-top: 15px;
+}
+
+.lang-toggle {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 8px 30px 8px 15px;
+  border: 2px solid #fefeff;
+  border-radius: 100px;
+  font-weight: 800;
+  color: #fff;
+  background: url(img/ico-arrow-down.png) no-repeat 80% center;
+  text-decoration: none;
+  margin: 15px 15px 0;
 }
 
 .navigation {

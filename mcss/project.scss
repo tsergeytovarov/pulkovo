@@ -579,3 +579,19 @@ footer{
 		padding: 0;
 	}
 }
+
+.find-combo{
+	.button-find{
+		display: none!important;
+	}
+
+	&.active{
+		.button-find{
+			display: inline-block!important;
+		}
+
+		.top-find{
+			@extend .s-8;
+		}
+	}
+}

@@ -29,4 +29,17 @@ $(function(){
 		auto: true
 	});
 
+	// search
+	$("#target").keyup(function() {
+
+		var a = $(this);
+
+		if( a.val() != '' ){
+			$('.find-combo').addClass('active');
+		} else {
+			$('.find-combo').removeClass('active');
+		}
+
+	});
+
 });

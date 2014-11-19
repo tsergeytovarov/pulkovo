@@ -119,7 +119,7 @@ table {
   width: 58.33%;
 }
 
-.s-8 {
+.s-8, .find-combo.active .top-find {
   width: 66.66%;
 }
 
@@ -228,6 +228,21 @@ form button {
   box-shadow: inset 0 -2px 0 0 #db7e02;
   border: none;
   outline: none;
+  font-family: 'PT Sans', sans-serif;
+}
+.btn.reset {
+  background: transparent;
+  font-size: 15px;
+  line-height: 19px;
+  box-shadow: none;
+  color: #325692;
+  padding: 10px 7px;
+}
+.btn.reset i {
+  background: url(img/ico-refresh.png) no-repeat center;
+  width: 22px;
+  height: 19px;
+  margin-right: 10px;
 }
 
 /**
@@ -740,6 +755,13 @@ footer .to-main {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.find-combo .button-find {
+  display: none !important;
+}
+.find-combo.active .button-find {
+  display: inline-block !important;
 }
 
 /* start the cosmetics project styles - this style not crashed layout */

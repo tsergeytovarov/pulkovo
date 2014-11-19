@@ -42,4 +42,25 @@ $(function(){
 
 	});
 
+	$('.lang-toogle').on('click', function(){
+
+		var s = $(this);
+
+		if ( s.hasClass('rus') ){
+			s.removeClass('rus').addClass('eng');
+		} else if ( s.hasClass('eng') ){
+			s.removeClass('eng').addClass('rus');
+		}
+	})
+
+	$(window).scroll(function(){
+		
+		if( $(this).scrollTop() > 0){
+			$('.main-menu').addClass('top');	
+		} else {
+			$('.main-menu').removeClass('top');	
+		}
+		
+	})
+
 });

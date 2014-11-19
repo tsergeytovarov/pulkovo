@@ -152,7 +152,7 @@ table {
   float: right;
 }
 
-.inline, .row.inline-row > .col, i, .ico, .lang-toggle, footer .to-main {
+.inline, .row.inline-row > .col, i, .ico, .lang-toggle, footer .to-main, .lang-toogle p, .lang-toogle .toggled {
   display: inline-block;
   *display: inline;
   vertical-align: top;
@@ -815,6 +815,39 @@ footer .to-main {
   margin: 10px 0;
 }
 
+/* lang-toogle */
+.lang-toogle {
+  display: block;
+  text-decoration: none;
+  margin: 15px 25px 0 0;
+}
+.lang-toogle p {
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 800;
+  color: #fff;
+}
+.lang-toogle .toggled {
+  width: 58px;
+  height: 33px;
+  margin: 0 15px;
+  background: url(img/ico-toggle-circle.png) no-repeat 3px 3px, url(img/ico-toggle-area.png) no-repeat center;
+  -webkit-transition: background .3s ease;
+          transition: background .3s ease;
+}
+.lang-toogle.rus .rus {
+  color: #fd9f23;
+}
+.lang-toogle.rus .toggled {
+  background: url(img/ico-toggle-circle.png) no-repeat 3px 3px, url(img/ico-toggle-area.png) no-repeat center;
+}
+.lang-toogle.eng .eng {
+  color: #fd9f23;
+}
+.lang-toogle.eng .toggled {
+  background: url(img/ico-toggle-circle.png) no-repeat 29px 3px, url(img/ico-toggle-area.png) no-repeat center;
+}
+
 /* start the cosmetics project styles - this style not crashed layout */
 /* transitions */
 /* 
@@ -823,13 +856,16 @@ footer .to-main {
 */
 @media (min-width: 768px) {
   .main-menu {
-    position: relative;
-    top: 0;
+    position: fixed;
+    top: 73px;
     left: 0;
     float: left;
     min-height: 100vh;
     border-top: 3px solid #2d3c55;
     padding-top: 0;
+  }
+  .main-menu.top {
+    top: 0;
   }
 
   .content-page {

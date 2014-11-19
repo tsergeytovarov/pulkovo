@@ -646,3 +646,55 @@ footer{
 		}	
 	}
 }
+
+/* lang-toogle */
+.lang-toogle{
+	display: block;
+	text-decoration: none;
+	margin: 15px 25px 0 0;
+
+	p, .toggled{
+		@extend .inline;
+	}
+
+	p{
+		font-size: 18px;
+		line-height: 33px;
+		font-weight: 800;
+		color: #fff;
+	}
+
+	.toggled{
+		width: 58px;
+		height: 33px;
+		margin: 0 15px;
+		background: 
+			url(img/ico-toggle-circle.png) no-repeat 3px 3px,
+			url(img/ico-toggle-area.png) no-repeat center;
+		transition: background .3s ease;
+	}
+
+	&.rus{
+		.rus{
+			color: $yellow;
+		}
+		
+		.toggled{
+			background: 
+				url(img/ico-toggle-circle.png) no-repeat 3px 3px,
+				url(img/ico-toggle-area.png) no-repeat center;
+		}
+	}
+
+	&.eng{
+		.eng{
+			color: $yellow;
+		}
+		
+		.toggled{
+			background: 
+				url(img/ico-toggle-circle.png) no-repeat 29px 3px,
+				url(img/ico-toggle-area.png) no-repeat center;
+		}
+	}
+}

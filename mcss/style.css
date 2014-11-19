@@ -401,7 +401,6 @@ body, html {
 }
 
 .lang-toggle-small {
-  display: block;
   font-size: 18px;
   line-height: 22px;
   padding: 8px 30px 8px 15px;
@@ -817,8 +816,11 @@ footer .to-main {
 }
 
 /* lang-toogle */
+.lang {
+  margin-top: 18px;
+}
+
 .lang-toogle {
-  display: none;
   text-decoration: none;
   margin: 15px 25px 0 0;
 }
@@ -890,14 +892,6 @@ footer .to-main {
   .navigation {
     margin-top: 0;
   }
-
-  .lang-toggle-small {
-    display: none;
-  }
-
-  .lang-toogle {
-    display: block;
-  }
 }
 @media (max-width: 768px) {
   .navigation ul li.active {
@@ -909,5 +903,36 @@ footer .to-main {
   }
   .company img {
     max-width: 100%;
+  }
+
+  .lang-toogle .toggled {
+    margin: 0;
+  }
+
+  .lang-toogle {
+    position: relative;
+    margin: 0 5px 0 0;
+    top: 10px;
+  }
+  .lang-toogle p {
+    position: absolute;
+    font-size: 12px;
+    color: #fd9f23;
+  }
+  .lang-toogle .rus {
+    left: 8px;
+  }
+  .lang-toogle .eng {
+    right: 5px;
+  }
+  .lang-toogle.rus .rus {
+    display: none;
+  }
+  .lang-toogle.eng .eng {
+    display: none;
+  }
+
+  .lang {
+    margin-top: 12px;
   }
 }

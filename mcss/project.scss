@@ -80,7 +80,6 @@ body, html{
 	}
 }
 .lang-toggle-small{
-	display: block;
 	@extend .inline;
 	font-size: 18px;
 	line-height: 22px;
@@ -649,8 +648,11 @@ footer{
 }
 
 /* lang-toogle */
+
+.lang{
+	margin-top: 18px;
+}
 .lang-toogle{
-	display: none;
 	text-decoration: none;
 	margin: 15px 25px 0 0;
 

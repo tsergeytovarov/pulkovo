@@ -41,15 +41,6 @@
 		margin-top: 0;
 	}
 
-	.lang-toggle-small{
-		display: none;
-	}
-
-	.lang-toogle{
-		display: block;
-	}
-
-
 }
 
 @media (max-width: 768px){
@@ -64,4 +55,45 @@
 			max-width: 100%;
 		}
 	}
+
+	.lang-toogle .toggled{
+		margin: 0;
+	}
+
+	.lang-toogle{
+		position: relative;
+		margin: 0 5px 0 0;
+		top: 10px;
+
+		p{
+			position: absolute;
+			font-size: 12px;
+			color: $yellow;
+		}
+
+		.rus{
+			left: 8px;
+		}
+
+		.eng{
+			right: 5px;
+		}
+
+		&.rus{
+			.rus{
+				display: none;
+			}
+		}
+
+		&.eng{
+			.eng{
+				display: none;
+			}
+		}
+	}
+
+	.lang {
+		margin-top: 12px;
+	}
+
 }

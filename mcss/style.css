@@ -953,3 +953,38 @@ footer .to-main {
     margin-top: 12px;
   }
 }
+
+@media (max-width: 400px){
+  
+  .tab-control.main.inline-row .col:last-child,
+  .tab-control.main.inline-row .col:first-child{
+    padding: 0 4px;
+  }
+
+  .tab-control.main .come i {
+    width: 45px;
+    height: 19px;
+    background: url(img/arrival.png) no-repeat center;
+    background-size: 100%;
+  }
+
+  .tab-control.main .come.active i {
+    background: url(img/arrival.png) no-repeat center;
+    background-size: 100%;
+  }
+
+  .tab-control.main .out i {
+    width: 45px;
+    height: 19px;
+    background: url(img/departure.png) no-repeat center;
+    background-size: 100%;
+  }
+
+  .tab-control.main .out.active i {
+    background: url(img/departure.png) no-repeat center;
+    background-size: 100%;
+  }
+
+
+
+}

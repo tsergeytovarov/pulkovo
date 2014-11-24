@@ -1,5 +1,5 @@
 /* 
-	compile file
+  compile file
 */
 /* start the foundation style */
 /* RESET */
@@ -245,15 +245,23 @@ form button {
   margin-right: 10px;
 }
 .btn.blue {
-  background: #fff;
-  border: 2px solid #325692;
-  color: #325692;
+  background: #325692;
+  color: #fff;
   box-shadow: none;
   font-size: 16px;
   margin-top: 20px;
   width: 120px;
   text-decoration: none;
   padding: 5px 10px;
+}
+
+.btn.blue-b{
+  background: #325692;
+  color: #fff;
+  box-shadow: none;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 9px 10px;
 }
 
 /**
@@ -330,7 +338,7 @@ form button {
 }
 
 /* 
-	start the project modules like a pages 
+  start the project modules like a pages 
 */
 .wrapper {
   max-width: 1024px;
@@ -338,6 +346,7 @@ form button {
   min-height: 100%;
   margin: 0 auto;
   overflow: hidden;
+  position: relati;
 }
 
 /* main-header */
@@ -503,10 +512,18 @@ body, html {
 .tab-control.main .come i {
   width: 54px;
   height: 19px;
-  background: url(img/ico-plane-come.png) no-repeat center;
+  background: url(img/arrival.png) no-repeat center;
 }
 .tab-control.main .come.active i {
-  background: url(img/ico-plane-come-active.png) no-repeat center;
+  background: url(img/arrival.png) no-repeat center;
+}
+.tab-control.main .out i {
+  width: 54px;
+  height: 19px;
+  background: url(img/departure.png) no-repeat center;
+}
+.tab-control.main .out.active i {
+  background: url(img/departure.png) no-repeat center;
 }
 .tab-control.main .active {
   color: #000;
@@ -520,29 +537,29 @@ body, html {
   font-size: 18px;
   line-height: 30px;
 }
-.status.out-stop {
+.status.vilet-time {
   color: #ed3f40;
+  background: url(img/ico-status-vilet-v.png) no-repeat left center;
 }
-.status.out-cancel {
+.status.go-to-plane {
+  color: #fd9f22;
+  background: url(img/ico-status-gotoplane.png) no-repeat left center;
+}
+.status.sit-stop {
   color: #ed3f40;
+  background: url(img/ico-status-sit-stop.png) no-repeat left center;
 }
-.status.out-process {
-  color: #fd9f23;
+.status.come {
+  color: #fd9f22;
+  background: url(img/ico-status-come.png) no-repeat left center;
 }
-.status.out-complete {
+.status.calncel {
   color: #325692;
+  background: url(img/ico-status-calncel.png) no-repeat left center;
 }
-.status.come-ok {
+.status.vilet-at {
   color: #ed3f40;
-}
-.status.come-timeout {
-  color: #ed3f40;
-}
-.status.come-process {
-  color: #ed3f40;
-}
-.status.come-come {
-  color: #ed3f40;
+  background: url(img/ico-status-vilet-at.png) no-repeat left center;
 }
 
 /* fligt-item */
@@ -854,8 +871,8 @@ footer .to-main {
 /* start the cosmetics project styles - this style not crashed layout */
 /* transitions */
 /* 
-	start context styles 
-	media and other
+  start context styles 
+  media and other
 */
 @media (min-width: 768px) {
   .main-menu {

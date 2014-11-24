@@ -985,6 +985,27 @@ footer .to-main {
     background-size: 100%;
   }
 
+}
 
 
+.contact .row{
+  padding: 25px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact h2,
+.contact p{
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+}
+
+.contact h2{
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.contact a{
+  color: #325592;
+  text-decoration: none;
 }
